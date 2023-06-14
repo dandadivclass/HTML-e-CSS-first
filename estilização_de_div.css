@@ -1,0 +1,185 @@
+
+* {
+    margin: 0px;          /* retira a margem e preenchimento automático da página */
+    padding: 0px;
+}
+
+
+body {
+    background-color: rgb(236, 236, 236);   /* cor de fundo da página */
+    font-size: 18px;                        /* e tamanho da fonte */
+}
+
+#div_CSS {
+    background-color: rgb(223, 208, 188);
+    width: 50%;           /* largura da div em relação a página */
+    height: 100%;     /* altura da div em relação a pagina */
+    margin: 20px;      /* margem da div em relação a página (TOP, RIGHT, BOTTOM, LEFT) */
+    padding: 20px;        /* preenchimento da div (TOP, RIGHT, BOTTOM, LEFT) */
+    box-sizing: border-box;     /* faz o cálculo automático para o acerto da margin e padding na página */
+    box-shadow: 10px 10px 10px #bebebe;   /* sombreamento de elementos caixa (valores negativos = RIGHT valores positivos = LEFT, o segundo valor é = BOTTOM, o terceiro = SOMBRA e último = COR) */
+    border-radius: 15px;    /* arredondamento de elementos */
+}
+#solo {
+    width: 100%;
+    height: 900px;
+    /*background-color: yellow; */
+    margin: 20px auto; 
+    background-image: url(../imgs/livro.jpg);   /* imagem como plano de fundo, sempre mostrar o caminho exato do arquivo */
+    background-repeat: no-repeat;     /* impede que a imagem se repita (caso ela seja menor que o espaço disponível para seu preenchimento na página) */
+    background-size: contain;               /* a imagem tentará ocupar todo o container da div, se a imagem for menor do que o espaço disponível veremos o fundo de cor da div restante */
+  
+    /*background-size: cover; */      /* aqui a imagem ocupa a div em sua total liberdade, independente do tamanho tanto da div quanto da imagem! */
+    /*background-size: 20px altura 30px largura;      /* odemos definir o tamanho que a imagem vai ocupar usando a medida em pixels também */
+  
+    background-position: 50% 50%;     /* podemos definir a posição da imagem dentro do container, utilizando medidas como píxels, porcentagem ou palavras-chave como bottom */
+    background-attachment: fixed;       /* o attachment tem dois valores, fixed = estática na tela e scroll = roda junto com a função escrollar na página, surtindo um efeito de movimentação */
+}
+
+#parag {
+    background-color: rgb(202, 194, 194);
+    margin: 10px;
+}
+
+#div_CORES {
+    background-color: aquamarine;
+    width: 50%;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    border: 10px groove #979ce0;    /* cria uma borda em volta da div, com alguns valores disponíveis para customização */
+    box-sizing: border-box;
+}
+
+#div_ORDENADAS {
+    background-color: rgb(255, 127, 249);
+    width: 50%;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#div_IMGS {
+    background-color: rgb(165, 164, 255);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;     /* tipo da fonte e seu nome sendo usada */
+}
+
+p {
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 25px;    /* espaçamento entre as linhas */
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    line-height: 25px;
+}
+
+ol {
+    list-style: none;     /* estilos aplicáveis na lista */
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 20%;     /* largura  */
+    height: 20%;    /* e altura definidos para uma imagem na página */
+    
+}
+
+.gato_laranja {
+    padding: 20px;
+    width: 30%;
+    height: 30%;
+    border-radius: 35px;
+    filter: blur(1px);      /* filtro plicável nas imagens, vários valores disponíveis */
+    /*filter: drop-shadow(8px 9px 10px rgb(100, 100, 100)); /* filtro para sombreamento da imagem, com valores iguais aos da div */
+}
+
+.gato_preto {
+    padding: 20px;
+    width: 30%;
+    height: 30%;
+    border-radius: 50px;
+    filter: brightness(80%);    /* filtro para aplicar/retirar brilho na imagem */
+    /*filter: contrast(90%); */
+    filter: drop-shadow(8px 9px 10px rgb(100, 100, 100));
+}
+
+#rgb {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(65, 102, 91);    /* cor do parágrafo */
+}
+
+#hexa {
+    font-family: 'Roboto Mono', monospace;
+    color: #48148d;
+}
+
+#hsl {
+    font-family: 'Roboto Mono', monospace;
+    color: hsl(320, 67%, 56%)
+}
+
+#hwb {
+    font-family: 'Roboto Mono', monospace;
+    color: hwb(231 6% 47%)
+}
+
+#nova_div {
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)),
+    url(../imgs/bela-foto-de-um-campo-verde-coberto-de-flores-amarelas-perto-das-cerejeiras_181624-24215.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 9px;
+}
+
+#nova_div h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 45px;
+    margin: 50px 30px;
+    color: #fff;
+}
+
+#nova_div p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 30px 30px 60px;
+    width: 40%;
+    color: #fff;
+}
+
+#nova_div a {
+    font-family: 'Catamaran', sans-serif;
+    text-decoration: none;
+    margin: 30px;
+    border: 2px solid rgb(82, 147, 211);
+    background-color: rgb(82, 147, 211);
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 9px;
+    font-weight: 200;
+}
+
+#nova_div a:hover {
+    background-color: transparent;
+}
