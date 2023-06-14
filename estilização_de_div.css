@@ -30,7 +30,7 @@ body {
     background-size: contain;               /* a imagem tentará ocupar todo o container da div, se a imagem for menor do que o espaço disponível veremos o fundo de cor da div restante */
   
     /*background-size: cover; */      /* aqui a imagem ocupa a div em sua total liberdade, independente do tamanho tanto da div quanto da imagem! */
-    /*background-size: 20px altura 30px largura;      /* odemos definir o tamanho que a imagem vai ocupar usando a medida em pixels também */
+    /*background-size: 20px altura 30px largura;      /* podemos definir o tamanho que a imagem vai ocupar usando a medida em pixels também */
   
     background-position: 50% 50%;     /* podemos definir a posição da imagem dentro do container, utilizando medidas como píxels, porcentagem ou palavras-chave como bottom */
     background-attachment: fixed;       /* o attachment tem dois valores, fixed = estática na tela e scroll = roda junto com a função escrollar na página, surtindo um efeito de movimentação */
