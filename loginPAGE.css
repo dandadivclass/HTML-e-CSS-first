@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     /*  margin e padding atualizados */
+}
+
+body {
+    width: 100vw;     /* body ocupa 100% do tamanho da largura da tela do dispositivo */
+    height: 100vh;    /* body ocupa 100% do tamanho da altura da tela do dispositivo */
+    background-image: linear-gradient(#4d7475a8, rgba(58, 102, 104, 0.671), #4d7475a9);     /* gradiente de cores de fundo do body */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    justify-content: center;          /* alinha verticalmente */
+    align-items: center;                  /* alinha horizontalmente */
+}
+
+#container {
+    background-color: rgb(248, 248, 248);
+    /* box-shadow: 10px 7px 20px rgb(255, 255, 255); */
+    /* margin: 70px 70px; */
+    width: 61vw;              /* a largura da div será 65% da largura da tela do dispositivo */
+    /* width: 55vw; */
+    height: 93vh;             /* a altura da div será 65% da largura da tela do dispositivo */
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: center;
+    align-items: start;
+    border-radius: 10px;
+}
+
+#conteudo_esquerda {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.decor {
+    background-color:  rgba(58, 102, 104, 0.24);
+    width: 100vh;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#titulo1:hover {              /* animação para quando o cursor passar em cima do titulo */
+    color: rgb(42, 72, 73);
+}
+
+#titulo2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.paragrafo {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header {
+    margin-top: 30px;
+}
+
+#conteudo_direita {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+.form {                       /* personalização da div que o formulario está contido */
+    background-color: rgba(243, 243, 243, 0.979);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 70px 40px 70px;
+    border-radius: 25px;
+}
+
+label input {                   /* personalização do campo de input do formulario */
+    background-color: rgba(66, 107, 105, 0.233);  
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 15px;          /* tamanho da fonte do input no form */
+    padding: 8px;           /* padding do texto dentro do input (para não colar na borda */
+}
+
+label input:focus-visible {   /* sublinhamento da borda do input do form*/
+    outline: none;              /* remove o sublinhamento */
+}
+
+.input_group {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.texto_form {
+    font-size: 19px;
+}
+
+#esqueci_senha {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: royalblue;
+}
+
+.botao {
+    background-color: rgba(58, 102, 104, 0.319);
+    border-radius: 20px;
+    height: 38px;
+    width: 58%;
+    padding: 6px;
+    text-align: center;
+    margin-top: 8px;
+    /* box-shadow: 1px 4px 9px #ccc; */
+}
+
+.botao_link {
+    color: black;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: transparent;
+    border: 2px solid rgba(125, 148, 150, 0.493);
+}
+
+.botao_login {
+    background-color: rgba(58, 102, 104, 0.319);
+    border-radius: 20px;
+    height: 38px;
+    width: 58%;
+    padding: 6px;
+    text-align: center;
+    margin-top: 3px;
+    /* box-shadow: 1px 4px 9px #ccc; */
+}
+
+.botao_login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(125, 148, 150, 0.493);
+}
